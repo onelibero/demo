@@ -2,9 +2,11 @@ package cdu.gu.demo.JUC;
 
 //双重效验锁实现对象单例（线程安全）
 public class Singleton {
+    public void get(){
+        System.out.println("saS");
+    }
     private volatile static Singleton Instance;
     private Singleton(){}
-
     public static Singleton getInstance(){
         //先判断对象是否已经实例过，没有实例过才进入加锁代码
         if (Instance == null){
