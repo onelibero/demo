@@ -2,6 +2,10 @@ package cdu.gu.demo.Collection.List;
 
 import java.util.LinkedList;
 
+/**
+ * 实现了list接口，用于list接口的一系列方法，底层是双向链表（jdk1.7是循环链表）,底层地址不连续所以没有实现RandomAccess接口
+ * 线程不安全,头尾插入删除时间复杂度O(1),对于中间的则需要遍历时间复杂度O(n)
+ */
 public class LinkedListText {
     public static void main(String[] args){
         LinkedList<String> list = new LinkedList<>();
