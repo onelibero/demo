@@ -6,6 +6,7 @@ import java.util.List;
 
 /**
  * ArrayList实现了list接口，拥有list接口的一系列方法，底层是动态数据也拥有数组的一系列方法
+ * 线程不安全，初始化大小为10，但是实际初始化时候为0，当插入的时候才会变成10，尾插和尾部删除复杂度O(1),地址寻址O(1),添加修改删除等为O(n)
  * 主要阐述其底层的System.arraycopy()方法和Arrays.copyOf()方法
  * 因为对于ArrayList的扩容操作和添加转换数组等操作都用到了这两个方法
  */
@@ -31,6 +32,7 @@ public class ArrayListText {
         }
         /**
          * 返回一个数组
+         * 实际底层也是调用的System.arraycopy方法
          * @param a 要复制的数组
          * @param a 要复制的长度
          */
