@@ -1,10 +1,21 @@
 # demo
 记录一些关于java的语法知识
+# Collection
+## 实现了list接口
+## 实现了queen接口
+## 实现了set接口
+## 实现了map接口（map不属于collection）
 
 # Internet
 ## 网络地址获取
 ## TCP和UDP的一些使用
 ## URL的一些使用
+
+# IO
+## 文件流
+
+# JUC
+## 双重效验的单例模式
 
 # Lambda
 可以将Lambda表达式理解为一个匿名函数； Lambda表达式允许将一个函数作为另外一个函数的参数； 
@@ -18,5 +29,15 @@
   - (params)->statement[语句]
   - (params)->{statements}
 此处写了九种类型的参考
+
+# redis
+## String类型的使用
+## hash类型的使用
+## set类型的使用
+## zset类型的使用
+## list类型的使用
+
+# sort
+## 介绍八种排序方式
 
  
